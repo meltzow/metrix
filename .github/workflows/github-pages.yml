@@ -35,12 +35,12 @@ jobs:
         uses: actions/configure-pages@v3.0.5
       - run: yarn install
         shell: bash
-      - run: ng build
+      - run: yarn run build
         shell: bash
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.8
         with:
           # Upload entire repository
-          path: 'pages'
+          path: 'dist/metrix'
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v2.0.0
