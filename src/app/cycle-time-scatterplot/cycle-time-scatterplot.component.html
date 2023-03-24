@@ -1,8 +1,6 @@
-<canvas baseChart
-        [datasets]="chart.datasets"
-        [labels]="chart.labels"
-        [options]="chart.options">
-</canvas>
+<mat-slider min="0" max="5" step="0.5" value="1.5">
+  <input matSliderThumb [(ngModel)]="quantil" (valueChange)="valueChange()">
+</mat-slider>
 
 <canvas baseChart
         [datasets]="linechart.datasets"
