@@ -26,7 +26,7 @@ export class CycleTimeScatterplotComponent {
         label: 'Series A',
         pointRadius: 10, type: 'scatter'
       },
-      {data: [this.quantil, this.quantil, this.quantil, this.quantil, this.quantil, this.quantil], type: 'line', pointRadius: 0},
+      {data: [this.quantil, this.quantil, this.quantil, this.quantil, this.quantil, this.quantil], type: 'line', pointRadius: 0, label: "quantil"},
     ],
     labels: ["1","2","3","4","5","6"],
     "options": {

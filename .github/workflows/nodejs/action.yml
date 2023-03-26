@@ -15,5 +15,5 @@ runs:
         key: node-modules-${{ hashFiles('package-lock.json') }}
     - run: npm install -g @angular/cli
       shell: bash
-    - run: yarn install
-      shell: bash
+#    - run: yarn install
+#      shell: bash

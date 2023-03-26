@@ -8,6 +8,7 @@ import { CycleTimeScatterplotComponent } from './cycle-time-scatterplot/cycle-ti
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from "@angular/material/slider";
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule, HttpClientXsrfModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule, HttpClientXsrfModule.disable(),
     AppRoutingModule,
     NgChartsModule,
     BrowserAnimationsModule,
